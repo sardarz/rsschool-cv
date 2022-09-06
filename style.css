@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
 *,
 *:before,
 *:after {
@@ -10,12 +9,10 @@ html {
   margin: 0;
   padding: 0;
 }
-
 img {
   max-width: 100%;
   display: block;
 }
-
 button,
 input,
 select,
@@ -26,7 +23,6 @@ textarea {
   padding: 0;
   margin: 0;
 }
-
 textarea {
   overflow: auto;
 }
