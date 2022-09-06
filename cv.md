@@ -46,3 +46,47 @@ function validSolution(board){
   return true
 }
 ```
+### Skills
+- HTML, CSS
+- JavaScript
+- Git, GitHub
+- React beginner
+---
+### Code example 
+Solution from codewars.com "Sudoku solution validator"
+```
+function validSolution(board){
+  if (board.some(x => x.includes(0))) return false
+  
+  for (let i = 0; i < board.length; i++) {
+    let set = new Set()
+    for (let j = 0; j < board.length; j++) {
+      set.add(board[i][j])
+    }
+    if (set.size !== 9) return false;
+  }
+  
+  for (let i = 0; i < board.length; i++) {
+    let set = new Set()
+    for (let j = 0; j < board.length; j++) {
+      set.add(board[j][i])
+    }
+    if (set.size !== 9) return false;
+  }
+  
+  for (let i = 0; i < board.length; i++) {
+    let set = new Set()
+    for (let j = 0; j < board.length; j++) {
+      set.add(board[Math.floor(i / 3) * 3 + Math.floor(j / 3)][(i * 3 + j % 3) % 9])
+    }
+    if (set.size !== 9) return false;
+  }
+  return true
+}
+```
+---
+### Working experience
+I do not have a real work experience, but I practice a lot by doing the challenges on frontendmentor.com. [completed challenges](https://sardarz.netlify.app/)
+
+### English proficiency
+I posess an 8 band IELTS certificate, which makes me a C1 speaker
